@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wonderful Wedding</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&amp;display=swap"/>
+    </noscript>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap"/>
+    </noscript>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/font-awesome/css/all.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/ekko-lightbox.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <style>
+      button{
+        border: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        outline-style: none;
+        
+      }
+      #play{
+        background-image: url('images/mute.png');
+      
+      }
+    </style>
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <header></header>
+    <!-- Navbar -->
+    <div class="ww-nav-bar sticky-top bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container"><a href="#"></a>
+          <h1 class="h2"><a class="pl-4 navbar-brand" href="#">Justin & Jesika</a></h1>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ww-navbarNav" aria-controls="ww-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse text-uppercase" id="ww-navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#couple">Pengantin</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#events">Acara</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Galeri</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#rsvp">Kehadiran</a></li>
+              <li class="nav-item">
+                <button id="play"></button></li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <!-- javascript -->
+    <script>
+      var musik = new Audio();
+      musik.src="music.mp3";
+      musik.loop=true;
+      musik.play();
+
+      function mulaiAudio() {
+        var play=document.getElementById("play");
+
+        play.addEventListener('click', fplay);
+
+        function fplay() {
+          if(musik.paused){
+            musik.play();
+            play.style.background="url(images/mute.png)";
+          }else{
+            musik.pause();
+            play.style.background="url(images/play.png)"; 
+          }
+          
+        }
+      }
+      window.addEventListener('load', mulaiAudio);
+    </script>
+
+    <!-- Ucapan 1 -->
+    <div class="ww-section" id="ucapan" style="        background-image: url('images/flower.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin-top: 1em;">
+      <div class="ww-ucapan">
+      <div class="container">
+        <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Terima kasih</h2>
+        <div class="row">
+          <div class="col-md-6" style="margin-left: auto; margin-right: auto;">
+            <div class="mt-3">
+              <h4 class="pt-3 text-center text-muted"data-aos="zoom-in-down" data-aos-duration="1000">
+                Atas Rahmad Tuhan Yang Maha Esa, kami bermaksud
+                mengundang Anda di acara Kami. Merupakan suatu kehormatan 
+                dan kebahagiaan bagi kami sekeluarga. apabila 
+                Bapak/Ibu/Saudara/I berkenan hadir 
+                dan memberikan doa restu pada <br><br><br><br>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- mempelai -->
+    <div class="ww-section" id="couple"
+        style="        
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;">
+      <div class="container">
+        <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Mempelai Pria & Wanita</h2>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <div class="mt-3"><img class="img-fluid" src="images/pria.png" alt="Groom" data-aos="flip-left" data-aos-duration="1000" style="width: 50%;"/>
+              <h5 class="pt-3 text-center text-muted">
+                Putra Pertama dari Pasangan <br>
+                Bambang & Mulyani <br>
+                Yogyakarta
+              </h5>
+              <h3 class="h2 mt-3 ww-title">Justin</h3>
+              <div class="ww-social-links"><a class="btn btn-link" href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a class="btn btn-link" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a><a class="btn btn-link" href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a><a class="btn btn-link" href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mt-3"><img class="img-fluid" src="images/wanita.png" alt="Bride" data-aos="flip-right" data-aos-duration="1000" style="width: 50%;"/>
+              <h5 class="pt-3 text-center text-muted">              
+                Putri Kedua dari Pasangan <br>
+                Joko & Siti <br>
+                Surakarta</h5>
+              <h3 class="h2 mt-3 ww-title">Jesika</h3>
+              <div class="ww-social-links"><a class="btn btn-link" href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a class="btn btn-link" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a><a class="btn btn-link" href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a><a class="btn btn-link" href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Acara -->
+    <div class="ww-section bg-light" id="events">
+      <div class="container ww-wedding-event">
+        <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Acara Pernikahan</h2>
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <div class="my-3">
+              <div class="h4">Akad Nikah</div>
+              <ul>
+                <li><i class="text-muted fas fa-map-marker-alt"></i><span class="pl-2 text-muted">Church End, Hendon, London, UK</span></li>
+                <li class="pt-2"><i class="text-muted far fa-calendar-alt"></i><span class="pl-2 text-muted">20 Dec 2018, 9AM - 6PM</span></li>
+              </ul>
+              <p>
+                Jumat, 10 Januari 2025 <br>
+              08:00 - 09:00 WIB <br>
+              Masjid Kampus UGM <br>
+               Jl. Prof. DR. Drs Notonagoro, Karang Malang, Caturtunggal, Kec. Depok, Kabupaten Sleman, Yogyakarta
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <div class="my-3"><img class="img-fluid" src="images/wedding-party.jpg" alt="Wedding Party" data-aos="fade-down-right" data-aos-duration="1000"/></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <div class="my-3">
+              <div class="h4">Resepsi</div>
+              <ul>
+                <li><i class="text-muted fas fa-map-marker-alt "></i><span class="pl-2 text-muted">City Place, Hendon, London, UK</span></li>
+                <li class="pt-2"><i class="text-muted far fa-calendar-alt "></i><span class="pl-2 text-muted">22 Dec 2018, 11AM - 6PM</span></li>
+              </ul>
+              <p>
+                Sabtu, 11 Januari 2025 <br>
+              09:00 - Selesai WIB <br>
+              Jogja Expo Center <br>
+              Jl. Wonocatur, Banguntapan, Bantul, Yogyakarta
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <div class="my-3"><img class="img-fluid" src="images/reception.jpg" alt="Reception" data-aos="fade-up-right" data-aos-duration="1000"/></div>
+          </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <div class="my-3">
+                <div class="h4">Unduh Mantu</div>
+                <ul>
+                  <li><i class="text-muted fas fa-map-marker-alt "></i><span class="pl-2 text-muted">City Place, Hendon, London, UK</span></li>
+                  <li class="pt-2"><i class="text-muted far fa-calendar-alt "></i><span class="pl-2 text-muted">22 Dec 2018, 11AM - 6PM</span></li>
+                </ul>
+                <p>
+                  Minggu, 12 Januari 2025 <br>
+                  09:00 - Selesai WIB <br>
+                  Rumah Mempelai Wanita <br>
+                  Jl. Surya, Jebres, Kota Surakarta
+                </p>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <div class="my-3"><img class="img-fluid" src="images/reception.jpg" alt="Reception" data-aos="fade-up-right" data-aos-duration="1000"/></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dokumentasi -->
+    <div class="ww-section" id="gallery">
+      <div class="ww-photo-gallery" >
+        <div class="container">
+          <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Galeri</h2>
+          <div class="col-md-12 text-center ww-category-filter mb-4"><a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="all">Semua</a><a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="vacation">Liburan</a><a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="party">Pesta</a><a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="ceremony">Perayaan</a><a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="wedding">Pernikahan</a></div>
+          <div class="ww-gallery" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="0">
+            <div class="card-columns">
+              <div class="card" data-groups="[&quot;vacation&quot;,&quot;ceremony&quot;]"><a href="images/gallery-pic-1.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-1.jpg" alt="Gallery Pic 1"/></a></div>
+              <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]"><a href="images/gallery-pic-2.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-2.jpg" alt="Gallery Pic 2"/></a></div>
+              <div class="card" data-groups="[&quot;vacation&quot;]"><a href="images/gallery-pic-3.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-3.jpg" alt="Gallery Pic 3"/></a></div>
+              <div class="card" data-groups="[&quot;party&quot;,&quot;vacation&quot;]"><a href="images/gallery-pic-4.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-4.jpg" alt="Gallery Pic 4"/></a></div>
+              <div class="card" data-groups="[&quot;vacation&quot;]"><a href="images/gallery-pic-5.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-5.jpg" alt="Gallery Pic 5"/></a></div>
+              <div class="card" data-groups="[&quot;wedding&quot;,&quot;ceremony&quot;,&quot;party&quot;]"><a href="images/gallery-pic-6.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-6.jpg" alt="Gallery Pic 6"/></a></div>
+              <div class="card" data-groups="[&quot;vacation&quot;]"><a href="images/gallery-pic-7.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-7.jpg" alt="Gallery Pic 7"/></a></div>
+              <div class="card" data-groups="[&quot;wedding&quot;,&quot;party&quot;]"><a href="images/gallery-pic-8.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-8.jpg" alt="Gallery Pic 8"/></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <div class="ww-section bg-light" id="video">
+      <div class="ww-video-gallery">
+        <div class="container">
+          <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Video</h2>
+          <div class="ww-video" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="0">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/64ojWgAzl94?si=otb62sVw2zkGjhsV?autoplay=1&mute=0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Ucapan 2 -->
+    <div class="ww-section" id="ucapan">
+      <div class="containe">
+        <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">See You</h2>
+        <div class="row">
+          <div class="col-md-6" style="margin-left: auto; margin-right: auto;">
+            <div class="mt-3">
+              <h4 class="pt-3 text-center text-muted"data-aos="zoom-in-down" data-aos-duration="1000">
+                Tidak ada solusi yang lebih baik bagi dua insan <br>
+                yang saling mencintai di banding pernikahan. <br> <br>
+               HR. Ibnu Majah
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ww-section ww-rsvp-detail text-white" id="rsvp">
+      <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="col text-center">
+          <h2 class="h1 ww-title pb-3" data-aos="zoom-in-down" data-aos-duration="1000">Kehadiran</h2>
+        </div>
+        <div class="row ww-rsvp-form">
+          <div class="col-md-10">
+            <div class="card-body">
+              <form action="https://formspree.io/example@email.com" method="POST">
+                <div class="row">
+                  <div class="col md-6 pb-3">
+                    <div class="form-group">
+                      <label for="name-input">Nama*</label>
+                      <input class="form-control" id="name-input" type="text" name="name" required="required"/>
+                    </div>
+                  </div>
+                  <div class="col-md-6 pb-3">
+                    <div class="form-group">
+                      <label for="email-input">Email*</label>
+                      <input class="form-control" id="email-input" type="email" name="_replyto" required="required"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col md-6 pb-3">
+                    <div class="form-group">
+                      <label for="guest-input">Kehadiran</label>
+                      <select class="form-control" id="guest-input" name="guest">
+                        <option value="1">Hadir</option>
+                        <option value="2">Tidak Hadir</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="message-input">Pesan</label>
+                      <textarea class="form-control" id="message-input" name="message" rows="4"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-center">
+                    <button class="btn btn-primary btn-submit" type="submit">Kirim</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <footer></footer>
+    <script src="scripts/jquery.min.js?ver=1.1.0"></script>
+    <script src="scripts/bootstrap.bundle.min.js?ver=1.1.0"></script>
+    <script src="scripts/aos.js?ver=1.1.0"></script>
+    <script src="scripts/ekko-lightbox.min.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+  </body>
+</html>
